@@ -29,3 +29,26 @@ Acribia test assignment
 3. Для постепенного добавления -- websockets
 4. Для перебора всех возможных комбинаций -- генераторы
 5. Для обеспечения хоть какой-то отзывчивости веб интерфейса при работе -- таблица с пагинацией и добавление в нее через setTimeout(() => {}, 0)
+
+########################
+Запуск проекта локально
+########################
+
+..code: bash
+
+    docker build -f Dockerfile.app -t resolver .
+    docker build -f Dockerfile.nginx -t app_nginx .
+    docker-compose -p resolver up -d
+
+Теперь приложение поднято и доступно на http://localhost
+
+###########################
+Сборка проекта для отправки
+###########################
+
+..code: bash
+
+    docker build -f Dockerfile.app -t resolver .
+    docker build -f Dockerfile.nginx -t app_nginx .
+    docker save resolver -o resolver.tar
+    docker save app_nginx -o app_nginx.tar

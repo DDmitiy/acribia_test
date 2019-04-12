@@ -1,0 +1,5 @@
+FROM nginx:1.13
+ARG REQ_HASH=latest
+MAINTAINER ddmitiy
+ENV PORT=80
+ADD ./front/app/dist /usr/share/nginx/html
