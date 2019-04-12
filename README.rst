@@ -65,6 +65,6 @@ Acribia test assignment
     tar -xvf resolver.tar.gz
     cd resolver
     chmod +x deploy.sh
-    deploy.sh
+    bash deploy.sh
 
 Теперь приложение поднято и доступно на http://localhost (если не занят 80-ый порт).
