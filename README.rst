@@ -53,3 +53,16 @@ Acribia test assignment
     docker build -f Dockerfile.nginx -t app_nginx .
     docker save resolver -o resolver.tar
     docker save app_nginx -o app_nginx.tar
+
+###########################
+Запуск приложения из архива
+###########################
+
+Для запуска приложения из архива необходимо распаковать архив и запустить файл `deploy.sh`, который там находится
+
+::
+
+    tar -xvf resolver.tar.gz
+    cd resolver
+    chmod +x deploy.sh
+    deploy.sh
