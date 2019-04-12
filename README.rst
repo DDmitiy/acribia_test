@@ -17,6 +17,7 @@ Acribia test assignment
 ::
 
     https://raw.githubusercontent.com/darkoperator/dnsrecon/master/subdomains-top1mil-5000.txt
+
 Поиск должен выполняться на бекенде.
 Успешные результаты поиска должны отображаться пользователю на ту же страницу постепенно (как только поддомен найден) и без перезагрузки страницы.
 
@@ -34,7 +35,7 @@ Acribia test assignment
 Запуск проекта локально
 ########################
 
-..code: bash
+::
 
     docker build -f Dockerfile.app -t resolver .
     docker build -f Dockerfile.nginx -t app_nginx .
@@ -46,7 +47,7 @@ Acribia test assignment
 Сборка проекта для отправки
 ###########################
 
-..code: bash
+::
 
     docker build -f Dockerfile.app -t resolver .
     docker build -f Dockerfile.nginx -t app_nginx .
