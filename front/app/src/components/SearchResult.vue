@@ -48,6 +48,10 @@
                 if (message.action === this.actions.updateProgress) {
                     this.progressPercent = message.percent
                 }
+                if (message.action === this.actions.start) {
+                    this.hosts = []
+                    this.progressPercent = 0
+                }
             },
             addHost(domain) {
                 setTimeout(() => {this.hosts.unshift(domain)}, 0)
