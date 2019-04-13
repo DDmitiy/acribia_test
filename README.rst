@@ -54,6 +54,12 @@ Acribia test assignment
     docker save resolver -o resolver.tar
     docker save app_nginx -o app_nginx.tar
 
+Или запуск скрипта для сборки:
+
+::
+
+    /bin/bash build.sh
+
 ###########################
 Запуск приложения из архива
 ###########################

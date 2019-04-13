@@ -12,3 +12,4 @@ mypy = "==0.630"
 [packages]
 aiohttp = "*"
 aiodns = "*"
+python-json-logger = "*"
